@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Duong - Resume</title>
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link href="./assets/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/perfect-scrollbar.min.css">
+</head>
+
+<body>
+    <button id="menu-toggle" class="d-md-none">
+        <i class="ti-menu"></i>
+    </button>
+    <div class="container-fluid" id="container">
+        <div class="row h-100">
+            <!-- Navbar -->
+            <ul class="nav flex-column bg-dark col-md-1 d-md-flex" id="right-side-menu">
+                <li class="text-center ">
+                    <img class="mb-4 rounded-2 ms-2" src="./assets/img/favicon.png" alt="RichardDuong-logo"
+                        width="75px">
+                </li>
+                <li class="nav-item text-center" style="--item-index: 1;" data-section="home">
+                    <a class="nav-link text-light pe-1" href="#home" onclick="showSection('home')">
+                        <i class="nav-icon ti-home"></i>
+                        <p class="mb-0">Home</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center" style="--item-index: 2;" data-section="about">
+                    <a class="nav-link text-light pe-1" href="#about" onclick="showSection('about')">
+                        <i class="nav-icon ti-user"></i>
+                        <p class="mb-0">About me</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center" style="--item-index: 3;" data-section="resume">
+                    <a class="nav-link text-light pe-1" href="#resume" onclick="showSection('resume')">
+                        <i class="nav-icon ti-id-badge"></i>
+                        <p class="mb-0">Resume</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center" style="--item-index: 4;" data-section="project">
+                    <a class="nav-link text-light pe-1" href="#project" onclick="showSection('project')">
+                        <i class="nav-icon ti-bag"></i>
+                        <p class="mb-0">Projects</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center" style="--item-index: 5;" data-section="contact">
+                    <a class="nav-link text-light pe-1" href="#contact" onclick="showSection('contact')">
+                        <i class="nav-icon ti-email"></i>
+                        <p class="mb-0">Contact</p>
+                    </a>
+                </li>
+                <!-- Nút chuyển đổi chế độ sáng/tối -->
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn" class="btn btn-outline-light btn-sm">
+                        <i class="ti-light-bulb"></i>
+                    </button>
+                </div>
+            </ul>
+            <!--End of Navbar -->
+
+            <div class="page-content col-md-11 row">
+                <!-- Profile section -->
+                <div class="profile col-md-3 text-center" id="profile">
+                    <div class="header-photo">
+                        <img src="./assets/img/avatar.png" alt="Richard Duong">
+                    </div>
+                    <h2 class="text-light text-uppercase fw-semibold">Richard Duong</h2>
+                    <p style="color: #BBBBBB;font-size: larger;">Web Developer</p>
+                    <div class="social-links">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/Quydnp" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/duong-nguyen-phu-quy/" target="_blank">
+                                    <i class="ti-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/quy.duongnguyenphu.5" target="_blank">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/quydnp/" target="_blank">
+                                    <i class="ti-instagram" title=""></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="./assets/CV.pdf" class="btn btn-cv" target="_blank" rel="noopener noreferrer">
+                        My CV
+                    </a>
+                </div>
+                <!--End of Profile section -->
+
+                <div id="info" class="col-md-9">
+                    <div class="page-content">
+                        <div id="content-scroll-container" class="custom-scrollbar">
+                            <section id="home" class="section text-light">
+                                <div class="section-content vcentered">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-12">
+                                            <div class="title-block">
+                                                <h2>Richard Duong</h2>
+                                                <div class="owl-carousel text-rotation">
+                                                    <div class="item">
+                                                        <div class="sp-subtitle">Web Developer</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="about" class="section text-light">
+                                <div class="page-title">
+                                    <h2>About <span>Me</span></h2>
+                                </div>
+
+                                <div class="section-content">
+                                    <!-- Personal Information -->
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-7">
+                                            <p>
+                                                As a dedicated second-year Software Engineer student, I am passionate about
+                                                becoming a .NET Developer. Eager to contribute to innovative projects and
+                                                learn from experienced professionals, I am committed to developing robust and
+                                                scalable applications. My goal is to leverage my skills and enthusiasm to excel
+                                                as a .NET Developer and make a meaningful impact.
+                                            </p>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-5">
+                                            <div class="info-list">
+                                                <ul>
+                                                    <li>
+                                                        <span class="title">Age</span>
+                                                        <span class="value">20</span>
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="title">Nationality</span>
+                                                        <span class="value">Vietnam</span>
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="title">Address</span>
+                                                        <span class="value">Danang</span>
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="title">e-mail</span>
+                                                        <span class="value">
+                                                            <a
+                                                                href="mailto:richardduong4work@gmail.com">richardduong4work@gmail.com</a>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Personal Information -->
+
+                                    <div class="white-space-50"></div>
+
+                                    <!-- Services -->
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12">
+                                            <div class="block-title">
+                                                <h3>What <span>I Do</span></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="col-inner">
+                                                <div class="info-list-w-icon">
+                                                    <div class="info-block-w-icon">
+                                                        <div class="ci-icon">
+                                                            <i class="ti ti-desktop"></i>
+                                                        </div>
+                                                        <div class="ci-text">
+                                                            <h4>Build Products</h4>
+                                                            <p>I help you build products that will help you grow, succeed and
+                                                                bring value.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info-block-w-icon">
+                                                        <div class="ci-icon">
+                                                            <i class="ti-comment-alt"></i>
+                                                        </div>
+                                                        <div class="ci-text">
+                                                            <h4>Mentor</h4>
+                                                            <p>I love to mentor and teach others on the latest and greatest
+                                                                technologies</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="col-inner">
+                                                <div class="info-list-w-icon">
+                                                    <div class="info-block-w-icon">
+                                                        <div class="ci-icon">
+                                                            <i class="ti-pencil-alt"></i>
+                                                        </div>
+                                                        <div class="ci-text">
+                                                            <h4>Fix Stuff</h4>
+                                                            <p>No matter whats the issue, i am sure we will be able to find a
+                                                                solution and make your product runs smoothly.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info-block-w-icon">
+                                                        <div class="ci-icon">
+                                                            <i class="ti-flag"></i>
+                                                        </div>
+                                                        <div class="ci-text">
+                                                            <h4>Management</h4>
+                                                            <p>Help deliver the best outcome of any team </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Services -->
+
+                                    <div class="white-space-30"></div>
+
+                                    <!-- Fun Facts -->
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12">
+
+                                            <div class="block-title">
+                                                <h3>Fun <span>Facts</span></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3">
+                                            <div class="fun-fact gray-default">
+                                                <i class=""></i>
+                                                <h4>Languages <br> Learned</h4>
+                                                <span class="fun-fact-block-value">4</span>
+                                                <span class="fun-fact-block-text"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-3">
+                                            <div class="fun-fact gray-default">
+                                                <i class=""></i>
+                                                <h4>Programming Languages</h4>
+                                                <span class="fun-fact-block-value">7</span>
+                                                <span class="fun-fact-block-text"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-3 ">
+                                            <div class="fun-fact gray-default">
+                                                <i class=""></i>
+                                                <h4>Sports <br> Played</h4>
+                                                <span class="fun-fact-block-value">10</span>
+                                                <span class="fun-fact-block-text"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-3 ">
+                                            <div class="fun-fact gray-default">
+                                                <i class=""></i>
+                                                <h4>Height <br> </h4>
+                                                <span class="fun-fact-block-value">178</span>
+                                                <span class="fun-fact-block-text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Fun Facts -->
+
+                                </div>
+                            </section>
+
+                            <section id="resume" class="section text-light">
+                                <div class="page-title">
+                                    <h2>Resume</h2>
+                                </div>
+
+                                <div class="section-content">
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-7">
+
+                                            <div class="block-title">
+                                                <h3>Education</h3>
+                                            </div>
+
+                                            <div class="timeline timeline-second-style clearfix">
+                                                <div class="timeline-item clearfix">
+                                                    <div class="left-part">
+                                                        <h5 class="item-period">2022</h5>
+                                                        <span class="item-company">FPT University</span>
+                                                    </div>
+                                                    <div class="divider"></div>
+                                                    <div class="right-part">
+                                                        <h4 class="item-title">Software Engineer</h4>
+                                                        <p>GPA: 8.46</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline-item clearfix">
+                                                    <div class="left-part">
+                                                        <h5 class="item-period">2019</h5>
+                                                        <span class="item-company">Le Quy Don Highschool for the Gifted</span>
+                                                    </div>
+                                                    <div class="divider"></div>
+                                                    <div class="right-part">
+                                                        <h4 class="item-title">Specialized in Mathematics</h4>
+                                                        <p>Achieving several prestigious awards at both city and national
+                                                            levels.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="white-space-50"></div>
+
+                                            <div class="block-title">
+                                                <h3>Experience</h3>
+                                            </div>
+
+                                            <div class="timeline timeline-second-style clearfix">
+                                                <div class="timeline-item clearfix">
+                                                    <div class="left-part">
+                                                        <h5 class="item-period">Sep 2024 - Current</h5>
+                                                        <span class="item-company">FPT Software</span>
+                                                    </div>
+                                                    <div class="divider"></div>
+                                                    <div class="right-part">
+                                                        <h4 class="item-title">Intern</h4>
+                                                        <p>.NET Developer
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="timeline-item clearfix">
+                                                    <div class="left-part">
+                                                        <h5 class="item-period">Aug 2024 - Current</h5>
+                                                        <span class="item-company">MindX Technology</span>
+                                                    </div>
+                                                    <div class="divider"></div>
+                                                    <div class="right-part">
+                                                        <h4 class="item-title">Coding Teacher</h4>
+                                                        <p>Teaching kids and teenagers coding and programming skills, mainly focus on Scratch and GameMaker Studio.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Skills & Certificates -->
+                                        <div class="col-xs-12 col-sm-5">
+
+                                            <div class="white-space-10"></div>
+
+                                            <!-- Coding Skills -->
+                                            <div class="block-title">
+                                                <h3>Coding <span>Skills</span></h3>
+                                            </div>
+
+                                            <div class="skills-info skills-second-style">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4 text-center">
+                                                        <img class="skill-img" src="./assets/img/html-skill.png" alt="HTML">
+                                                        <h4>HTML</h4>
+                                                    </div>
+                                                    <div class="col-4 col-sm-4 text-center">
+                                                        <img class="skill-img" src="./assets/img/css-skill.png" alt="CSS">
+                                                        <h4>CSS</h4>
+                                                    </div>
+                                                    <div class="col-4 col-sm-4 text-center">
+                                                        <img class="skill-img" src="./assets/img/cs-skill.png" alt="C#">
+                                                        <h4>C#</h4>
+                                                    </div>
+                                                    <div class="col-4 col-sm-4 text-center">
+                                                        <img class="skill-img" src="./assets/img/dotnet-skill.png" alt="Dotnet">
+                                                        <h4>.NET</h4>
+                                                    </div>
+                                                    <div class="col-4 col-sm-4 text-center">
+                                                        <img class="skill-img rounded-3" src="./assets/img/js-skill.png"
+                                                            alt="Javascript">
+                                                        <h4>Javascript</h4>
+                                                    </div>
+                                                    <div class="col-4 col-sm-4 text-center">
+                                                        <img class="skill-img" src="./assets/img/java-skill.png" alt="Java">
+                                                        <h4>Java</h4>
+                                                    </div>
+                                                    <div class="col-4 col-sm-4 text-center">
+                                                        <img class="skill-img rounded-3" src="./assets/img/bootstrap-skill.png"
+                                                            alt="Bootstrap">
+                                                        <h4>Bootstrap</h4>
+                                                    </div>
+                                                    <div class="col-4 col-sm-4 text-center">
+                                                        <img class="skill-img" src="./assets/img/mssql-skill.png" alt="mssql">
+                                                        <h4>MS SQL Server</h4>
+                                                    </div>
+                                                    <div class="col-4 col-sm-4 text-center">
+                                                        <img class="skill-img" src="./assets/img/git-skill.png" alt="mssql">
+                                                        <h4>Git</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End of Coding Skills -->
+
+                                            <div class="white-space-10"></div>
+
+                                            <!-- Knowledges -->
+                                            <div class="block-title">
+                                                <h3>Knowledges</h3>
+                                            </div>
+
+                                            <ul class="knowledges ps-0">
+                                                <li>TailwinCSS</li>
+                                                <li>Entity Framework</li>
+                                                <li>WPF</li>
+                                                <li>ReactJS</li>
+                                                <li>RestAPI</li>
+                                                <li>jQuery</li>
+                                            </ul>
+                                            <!-- End of Knowledges -->
+                                        </div>
+                                        <!-- End of Skills & Certificates -->
+                                    </div>
+
+                                    <div class="white-space-50"></div>
+
+                                    <!-- Certificates -->
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12">
+                                            <div class="block-title">
+                                                <h3>Certificates</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <!-- Certificate 1 -->
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="certificate-item clearfix">
+                                                <div class="certi-logo">
+                                                    <img src="./assets/img/ielts-logo.png" alt="logo">
+                                                </div>
+
+                                                <div class="certi-content">
+                                                    <div class="certi-title">
+                                                        <h4>IELTS</h4>
+                                                    </div>
+                                                    <div class="certi-id">
+                                                        <span>7.0</span>
+                                                    </div>
+                                                    <div class="certi-date">
+                                                        <span>9 April 2022</span>
+                                                    </div>
+                                                    <div class="certi-company">
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Certificate 1 -->
+
+                                    </div>
+                                    <!-- End of Certificates -->
+                                </div>
+                            </section>
+
+                            <section id="project" class="section text-light">
+                                <div class="page-title">
+                                    <h2>Projects</h2>
+                                </div>
+                                <div class="section-content">
+                                    <div class="row">
+                                        <ul class="projects-list">
+                                            <li class="project-item">
+                                                <div class="project-info">
+                                                    <h3>ViLearning</h3>
+                                                    <p>A platform that provides online courses for secondary and
+                                                        high school students with various subjects and levels, including 3 roles: Student, Teacher, Admin.</p>
+                                                    <div class="project-tech">
+                                                        <span>ASP.NET Core, Entity Framework, MS SQL Server,
+                                                            Bootstrap, SignalR.</span>
+                                                    </div>
+                                                    <a href="https://github.com/quangvo5803/ViLearning" target="_blank" class="github-link">
+                                                        <i class="ti-github"></i> Watch on GitHub
+                                                    </a>
+                                                </div>
+                                                <div class="project-image">
+                                                    <img src="./assets/img/vilearning.png" alt="ViLearning">
+                                                </div>
+                                            </li>
+
+                                            <li class="project-item">
+                                                <div class="project-info">
+                                                    <h3>Hotel Booking Website</h3>
+                                                    <p>A Java web project using Java Servlet, a hotel booking website, includes 3 roles: Customer, Supplier, Admin.</p>
+                                                    <div class="project-tech">
+                                                        <span>Java Servlet, JSP, MS SQL Server,
+                                                            Bootstrap.</span>
+                                                    </div>
+                                                    <a href="https://github.com/HauNQ/Booking_Hotel_Last_Version" target="_blank" class="github-link">
+                                                        <i class="ti-github"></i> Watch on GitHub
+                                                    </a>
+                                                </div>
+                                                <div class="project-image">
+                                                    <img src="./assets/img/html-skill.png" alt="ViLearning">
+                                                </div>
+                                            </li>
+
+                                            <li class="project-item">
+                                                <div class="project-info">
+                                                    <h3>ViLibrary</h3>
+                                                    <p>A desktop application for managing a library, including features for CRUD books and tracking book transactions, as well as managing user accounts.</p>
+                                                    <div class="project-tech">
+                                                        <span>C#, WPF, MVVM, Entity Framework, MS SQL Server.</span>
+                                                    </div>
+                                                    <a href="https://github.com/chesterdang/ViLibrary" target="_blank" class="github-link">
+                                                        <i class="ti-github"></i> Watch on GitHub
+                                                    </a>
+                                                </div>
+                                                <div class="project-image">
+                                                    <img src="./assets/img/vilibrary.png" alt="ViLearning">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="contact" class="section text-light">
+                                <div class="page-title">
+                                    <h2>Contact</h2>
+                                </div>
+
+                                <div class="section-content">
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <div class="lm-info-block">
+                                                <i class="ti-location-pin"></i>
+                                                <h4>Danang, Vietnam</h4>
+                                                <span class="lm-info-block-value"></span>
+                                                <span class="lm-info-block-text"></span>
+                                            </div>
+
+                                            <div class="lm-info-block">
+                                                <i class="ti-mobile"></i>
+                                                <h4 style="letter-spacing: 2px;">+84XXXXXX073</h4>
+                                                <span class="lm-info-block-value"></span>
+                                                <span class="lm-info-block-text"></span>
+                                            </div>
+
+                                            <div class="lm-info-block">
+                                                <i class="ti-email"></i>
+                                                <h4>richardduong4work@gmail.com</h4>
+                                                <span class="lm-info-block-value"></span>
+                                                <span class="lm-info-block-text"></span>
+                                            </div>
+
+                                            <div class="lm-info-block">
+                                                <i class="ti-check-box"></i>
+                                                <h4>Freelance Available</h4>
+                                                <span class="lm-info-block-value"></span>
+                                                <span class="lm-info-block-text"></span>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-8">
+                                            <div class="block-title">
+                                                <h3>How Can I <span>Help You?</span></h3>
+                                            </div>
+
+                                            <form id="contact_form" class="contact-form" asp-action="SendEmail"
+                                                asp-controller="Home" method="post">
+
+                                                <div class="controls two-columns">
+                                                    <div class="fields clearfix">
+                                                        <div class="left-column">
+                                                            <div class="form-group form-group-with-icon">
+                                                                <input id="form_name" type="text" name="fullName"
+                                                                    class="form-control" placeholder="" required="required"
+                                                                    data-error="Name is required.">
+                                                                <label>Full Name</label>
+                                                                <div class="form-control-border"></div>
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+
+                                                            <div class="form-group form-group-with-icon">
+                                                                <input id="form_email" type="email" name="email"
+                                                                    class="form-control" placeholder="" required="required"
+                                                                    data-error="Valid email is required.">
+                                                                <label>Email Address</label>
+                                                                <div class="form-control-border"></div>
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+
+                                                            <div class="form-group form-group-with-icon">
+                                                                <input id="form_subject" type="text" name="subject"
+                                                                    class="form-control" placeholder="" required="required"
+                                                                    data-error="Subject is required.">
+                                                                <label>Subject</label>
+                                                                <div class="form-control-border"></div>
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-column">
+                                                            <div class="form-group form-group-with-icon">
+                                                                <textarea id="form_message" name="message" class="form-control"
+                                                                    placeholder="" rows="7" required="required"
+                                                                    data-error="Please, leave me a message."></textarea>
+                                                                <label>Message</label>
+                                                                <div class="form-control-border"></div>
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <input type="submit" class="button btn-send" value="Send message">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- For mobile responsive -->
+    <script src="./assets/js/Jquery.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/perfect-scrollbar.min.js"></script>
+</body>
+
+</html>
+</html>
